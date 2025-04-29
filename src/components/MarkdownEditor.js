@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/App.css'
+import ReactMarkdown from 'react-markdown';
 
 function MarkdownEditor() {
     let [load,setLoad]=useState(false)
@@ -23,7 +24,11 @@ function MarkdownEditor() {
         </div>
 
         <div className="preview" >
-          {load ? <h1>Loading...</h1> : <h1>{text}</h1>}
+          {load ? (
+            <h1>Loading...</h1>
+            ) : (
+                <ReactMarkdown>{text}</ReactMarkdown>
+            )}
         </div>
         
         </div>
