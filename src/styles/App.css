@@ -1,5 +1,9 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
 h1 {
-    color: #27aedb;
+    /* color: #27aedb; */
     text-align: center;
     }
     
@@ -9,4 +13,20 @@ button{
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.textarea{
+    width: 50vw;
+    height: 100vh;
+    background-color: #8fcbdf;
+    /* border: 1px solid blue; */
+}
+.preview{
+    width: 50vw;
+    height: 100vh;
+    background-color: #17b2e6;
+    /* border: 1px solid blue; */
 }
